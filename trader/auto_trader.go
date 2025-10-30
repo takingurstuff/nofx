@@ -26,6 +26,7 @@ type AutoTraderConfig struct {
 	// 币安API配置
 	BinanceAPIKey    string
 	BinanceSecretKey string
+	BinanceTestnet   bool
 
 	// Hyperliquid配置
 	HyperliquidPrivateKey string
@@ -136,7 +137,7 @@ func NewAutoTrader(config AutoTraderConfig) (*AutoTrader, error) {
 	switch config.Exchange {
 	case "binance":
 		log.Printf("🏦 [%s] 使用币安合约交易", config.Name)
-		trader = NewFuturesTrader(config.BinanceAPIKey, config.BinanceSecretKey)
+		trader = NewFuturesTrader(config.BinanceAPIKey, config.BinanceSecretKey, config.BinanceTestnet)
 	case "hyperliquid":
 		log.Printf("🏦 [%s] 使用Hyperliquid交易", config.Name)
 		trader, err = NewHyperliquidTrader(config.HyperliquidPrivateKey, config.HyperliquidWalletAddr, config.HyperliquidTestnet)
@@ -169,7 +170,6 @@ func NewAutoTrader(config AutoTraderConfig) (*AutoTrader, error) {
 		exchange:              config.Exchange,
 		config:                config,
 		trader:                trader,
-		mcpClient:             mcpClient,
 		decisionLogger:        decisionLogger,
 		initialBalance:        config.InitialBalance,
 		lastResetTime:         time.Now(),

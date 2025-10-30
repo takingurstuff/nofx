@@ -30,8 +30,10 @@ type FuturesTrader struct {
 }
 
 // NewFuturesTrader 创建合约交易器
-func NewFuturesTrader(apiKey, secretKey string) *FuturesTrader {
+func NewFuturesTrader(apiKey, secretKey string, testnet bool) *FuturesTrader {
+	futures.UseTestnet = testnet
 	client := futures.NewClient(apiKey, secretKey)
+
 	return &FuturesTrader{
 		client:        client,
 		cacheDuration: 15 * time.Second, // 15秒缓存

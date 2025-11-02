@@ -170,6 +170,7 @@ func NewAutoTrader(config AutoTraderConfig) (*AutoTrader, error) {
 		exchange:              config.Exchange,
 		config:                config,
 		trader:                trader,
+		mcpClient:             mcpClient,
 		decisionLogger:        decisionLogger,
 		initialBalance:        config.InitialBalance,
 		lastResetTime:         time.Now(),

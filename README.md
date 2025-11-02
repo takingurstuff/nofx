@@ -31,7 +31,7 @@
 
 ### 💼 Seed Funding Round Open
 
-We are currently raising our **seed round**. 
+We are currently raising our **seed round**.
 
 **For investment inquiries**, please DM **Tinkle** or **Zack** via Twitter.
 
@@ -60,6 +60,7 @@ NOFX now supports **three major exchanges**: Binance, Hyperliquid, and Aster DEX
 A high-performance decentralized perpetual futures exchange!
 
 **Key Features:**
+
 - ✅ Full trading support (long/short, leverage, stop-loss/take-profit)
 - ✅ Automatic precision handling (order size & price)
 - ✅ Unified trader interface (seamless exchange switching)
@@ -67,12 +68,14 @@ A high-performance decentralized perpetual futures exchange!
 - ✅ No API keys needed - just your Ethereum private key
 
 **Why Hyperliquid?**
+
 - 🔥 Lower fees than centralized exchanges
 - 🔒 Non-custodial - you control your funds
 - ⚡ Fast execution with on-chain settlement
 - 🌍 No KYC required
 
 **Quick Start:**
+
 1. Get your MetaMask private key (remove `0x` prefix)
 2. Set `"exchange": "hyperliquid"` in config.json
 3. Add `"hyperliquid_private_key": "your_key"`
@@ -85,6 +88,7 @@ See [Configuration Guide](#-alternative-using-hyperliquid-exchange) for details.
 A Binance-compatible decentralized perpetual futures exchange!
 
 **Key Features:**
+
 - ✅ Binance-style API (easy migration from Binance)
 - ✅ Web3 wallet authentication (secure and decentralized)
 - ✅ Full trading support with automatic precision handling
@@ -92,12 +96,14 @@ A Binance-compatible decentralized perpetual futures exchange!
 - ✅ EVM-compatible (Ethereum, BSC, Polygon, etc.)
 
 **Why Aster?**
+
 - 🎯 **Binance-compatible API** - minimal code changes required
 - 🔐 **API Wallet System** - separate trading wallet for security
 - 💰 **Competitive fees** - lower than most centralized exchanges
 - 🌐 **Multi-chain support** - trade on your preferred EVM chain
 
 **Quick Start:**
+
 1. Register via [Aster Referral Link](https://www.asterdex.com/en/referral/fdfc0e) (get fee discounts!)
 2. Visit [Aster API Wallet](https://www.asterdex.com/en/api-wallet)
 3. Connect your main wallet and create an API wallet
@@ -110,12 +116,14 @@ A Binance-compatible decentralized perpetual futures exchange!
 ## 📸 Screenshots
 
 ### 🏆 Competition Mode - Real-time AI Battle
+
 ![Competition Page](screenshots/competition-page.png)
-*Multi-AI leaderboard with real-time performance comparison charts showing Qwen vs DeepSeek live trading battle*
+_Multi-AI leaderboard with real-time performance comparison charts showing Qwen vs DeepSeek live trading battle_
 
 ### 📊 Trader Details - Complete Trading Dashboard
+
 ![Details Page](screenshots/details-page.png)
-*Professional trading interface with equity curves, live positions, and AI decision logs with expandable input prompts & chain-of-thought reasoning*
+_Professional trading interface with equity curves, live positions, and AI decision logs with expandable input prompts & chain-of-thought reasoning_
 
 ---
 
@@ -124,12 +132,14 @@ A Binance-compatible decentralized perpetual futures exchange!
 NOFX is currently **fully operational in cryptocurrency markets** with the following proven capabilities:
 
 ### 🏆 Multi-Agent Competition Framework
+
 - **Live Agent Battle**: Qwen vs DeepSeek models compete in real-time trading
 - **Independent Account Management**: Each agent maintains its own decision logs and performance metrics
 - **Real-time Performance Comparison**: Live ROI tracking, win rate statistics, and head-to-head analysis
 - **Self-Evolution Loop**: Agents learn from their historical performance and continuously improve
 
 ### 🧠 AI Self-Learning & Optimization
+
 - **Historical Feedback System**: Analyzes last 20 trading cycles before each decision
 - **Smart Performance Analysis**:
   - Identifies best/worst performing assets
@@ -139,6 +149,7 @@ NOFX is currently **fully operational in cryptocurrency markets** with the follo
 - **Dynamic Strategy Adjustment**: AI autonomously adapts trading style based on backtest results
 
 ### 📊 Universal Market Data Layer (Crypto Implementation)
+
 - **Multi-Timeframe Analysis**: 3-minute real-time + 4-hour trend data
 - **Technical Indicators**: EMA20/50, MACD, RSI(7/14), ATR
 - **Open Interest Tracking**: Market sentiment, capital flow analysis
@@ -146,6 +157,7 @@ NOFX is currently **fully operational in cryptocurrency markets** with the follo
 - **Cross-Exchange Support**: Binance, Hyperliquid, Aster DEX with unified data interface
 
 ### 🎯 Unified Risk Control System
+
 - **Position Limits**: Per-asset limits (Altcoins ≤1.5x equity, BTC/ETH ≤10x equity)
 - **Configurable Leverage**: Dynamic leverage from 1x to 50x based on asset class and account type
 - **Margin Management**: Total usage ≤90%, AI-controlled allocation
@@ -153,12 +165,14 @@ NOFX is currently **fully operational in cryptocurrency markets** with the follo
 - **Anti-Stacking Protection**: Prevents duplicate positions in same asset/direction
 
 ### ⚡ Low-Latency Execution Engine
+
 - **Multi-Exchange API Integration**: Binance Futures, Hyperliquid DEX, Aster DEX
 - **Automatic Precision Handling**: Smart order size & price formatting per exchange
 - **Priority Execution**: Close existing positions first, then open new ones
 - **Slippage Control**: Pre-execution validation, real-time precision checks
 
 ### 🎨 Professional Monitoring Interface
+
 - **Binance-Style Dashboard**: Professional dark theme with real-time updates
 - **Equity Curves**: Historical account value tracking (USD/percentage toggle)
 - **Performance Charts**: Multi-agent ROI comparison with live updates
@@ -232,11 +246,13 @@ nofx/
 ### Core Dependencies
 
 **Backend (Go)**
+
 - `github.com/adshao/go-binance/v2` - Binance API client
 - `github.com/markcheno/go-talib` - Technical indicator calculation (TA-Lib)
 - `github.com/gin-gonic/gin` - HTTP API framework
 
 **Frontend (React + TypeScript)**
+
 - `react` + `react-dom` - UI framework
 - `recharts` - Chart library (equity curve, comparison charts)
 - `swr` - Data fetching and caching
@@ -281,6 +297,7 @@ Before using this system, you need a Binance Futures account. **Use our referral
 Docker automatically handles all dependencies (Go, Node.js, TA-Lib) and environment setup. Perfect for beginners!
 
 #### Step 1: Prepare Configuration
+
 ```bash
 # Copy configuration template
 cp config.json.example config.json
@@ -290,6 +307,7 @@ nano config.json  # or use any editor
 ```
 
 #### Step 2: One-Click Start
+
 ```bash
 # Option 1: Use convenience script (Recommended)
 chmod +x start.sh
@@ -306,11 +324,13 @@ docker compose up -d --build
 ```
 
 #### Step 3: Access Dashboard
+
 Open your browser and visit: **http://localhost:3000**
 
 **That's it! 🎉** Your AI trading system is now running!
 
 #### Manage Your System
+
 ```bash
 ./start.sh logs      # View logs
 ./start.sh status    # Check status
@@ -319,6 +339,7 @@ Open your browser and visit: **http://localhost:3000**
 ```
 
 **📖 For detailed Docker deployment guide, troubleshooting, and advanced configuration:**
+
 - **English**: See [DOCKER_DEPLOY.en.md](DOCKER_DEPLOY.en.md)
 - **中文**: 查看 [DOCKER_DEPLOY.md](DOCKER_DEPLOY.md)
 
@@ -337,11 +358,13 @@ Open your browser and visit: **http://localhost:3000**
 #### Installing TA-Lib
 
 **macOS:**
+
 ```bash
 brew install ta-lib
 ```
 
 **Ubuntu/Debian:**
+
 ```bash
 sudo apt-get install libta-lib0-dev
 ```
@@ -358,11 +381,13 @@ cd nofx
 ### 3. Install Dependencies
 
 **Backend:**
+
 ```bash
 go mod download
 ```
 
 **Frontend:**
+
 ```bash
 cd web
 npm install
@@ -376,6 +401,7 @@ Before configuring the system, you need to obtain AI API keys. Choose one of the
 #### Option 1: DeepSeek (Recommended for Beginners)
 
 **Why DeepSeek?**
+
 - 💰 Cheaper than GPT-4 (about 1/10 the cost)
 - 🚀 Fast response time
 - 🎯 Excellent trading decision quality
@@ -416,6 +442,7 @@ Before configuring the system, you need to obtain AI API keys. Choose one of the
 ### 5. System Configuration
 
 **Two configuration modes available:**
+
 - **🌟 Beginner Mode**: Single trader + default coins (recommended!)
 - **⚔️ Expert Mode**: Multiple traders competition
 
@@ -438,6 +465,7 @@ cp config.json.example config.json
       "ai_model": "deepseek",
       "binance_api_key": "YOUR_BINANCE_API_KEY",
       "binance_secret_key": "YOUR_BINANCE_SECRET_KEY",
+      "binance_testnet": false,
       "use_qwen": false,
       "deepseek_key": "sk-xxxxxxxxxxxxx",
       "qwen_key": "",
@@ -458,17 +486,32 @@ cp config.json.example config.json
 
 **Step 3**: Replace placeholders with your actual keys
 
-| Placeholder | Replace With | Where to Get |
-|------------|--------------|--------------|
-| `YOUR_BINANCE_API_KEY` | Your Binance API Key | Binance → Account → API Management |
-| `YOUR_BINANCE_SECRET_KEY` | Your Binance Secret Key | Same as above |
-| `sk-xxxxxxxxxxxxx` | Your DeepSeek API Key | [platform.deepseek.com](https://platform.deepseek.com) |
+| Placeholder               | Replace With            | Where to Get                                           |
+| ------------------------- | ----------------------- | ------------------------------------------------------ |
+| `YOUR_BINANCE_API_KEY`    | Your Binance API Key    | Binance → Account → API Management                     |
+| `YOUR_BINANCE_SECRET_KEY` | Your Binance Secret Key | Same as above                                          |
+| `sk-xxxxxxxxxxxxx`        | Your DeepSeek API Key   | [platform.deepseek.com](https://platform.deepseek.com) |
 
 **Step 4**: Adjust initial balance (optional)
 
 - `initial_balance`: Set to your actual Binance futures account balance
 - Used to calculate profit/loss percentage
 - Example: If you have 500 USDT, set `"initial_balance": 500.0`
+
+**Step 5**: Testnet Settings (optional)
+
+- `binance_testnet`: `true` if you dont want to risk capital, trades on binance testnet, `false` for trading on live exchange with live capital
+- **HOW TO GET TESTNET KEYS**:
+
+1. Navigate to https://demo.binance.com/en/futures
+2. Create an account if you need to, or use your existing binance account
+3. Hover over the account icon, typically to the right of the back to live panel
+4. Select Demo Trading API from the dropdown
+5. Click Create API
+6. Create the key by following the prompts
+7. Once generated, Copy the API key and Secret key, and place them in the api and secret key placeholders
+
+- Testnet accounts typically are preloaded with 5000 USDT, so initial balance would be 5000.00
 
 **✅ Configuration Checklist:**
 
@@ -517,6 +560,7 @@ cp config.json.example config.json
 ```
 
 **Key Differences from Binance Config:**
+
 - Replace `binance_api_key` + `binance_secret_key` with `hyperliquid_private_key`
 - Add `"exchange": "hyperliquid"` field
 - Set `hyperliquid_testnet: false` for mainnet (or `true` for testnet)
@@ -530,6 +574,7 @@ cp config.json.example config.json
 **NOFX also supports Aster DEX** - a Binance-compatible decentralized perpetual futures exchange!
 
 **Why Choose Aster?**
+
 - 🎯 Binance-compatible API (easy migration)
 - 🔐 API Wallet security system
 - 💰 Lower trading fees
@@ -578,6 +623,7 @@ cp config.json.example config.json
 ```
 
 **Key Configuration Fields:**
+
 - `"exchange": "aster"` - Set exchange to Aster
 - `aster_user` - Your main wallet address
 - `aster_signer` - API wallet address (from Step 1)
@@ -586,6 +632,7 @@ cp config.json.example config.json
 **📖 For detailed setup instructions, see**: [Aster Integration Guide](ASTER_INTEGRATION.md)
 
 **⚠️ Security Notes**:
+
 - API wallet is separate from your main wallet (extra security layer)
 - Never share your API private key
 - You can revoke API wallet access anytime at [asterdex.com](https://www.asterdex.com/en/api-wallet)
@@ -632,6 +679,7 @@ For running multiple AI traders competing against each other:
 ```
 
 **Requirements for Competition Mode:**
+
 - 2 separate Binance futures accounts (different API keys)
 - Both AI API keys (Qwen + DeepSeek)
 - More capital for testing (recommended: 500+ USDT per account)
@@ -640,32 +688,33 @@ For running multiple AI traders competing against each other:
 
 #### 📚 Configuration Field Explanations
 
-| Field | Description | Example Value | Required? |
-|-------|-------------|---------------|-----------|
-| `id` | Unique identifier for this trader | `"my_trader"` | ✅ Yes |
-| `name` | Display name | `"My AI Trader"` | ✅ Yes |
-| `enabled` | Whether this trader is enabled<br>Set to `false` to skip startup | `true` or `false` | ✅ Yes |
-| `ai_model` | AI provider to use | `"deepseek"` or `"qwen"` or `"custom"` | ✅ Yes |
-| `exchange` | Exchange to use | `"binance"` or `"hyperliquid"` or `"aster"` | ✅ Yes |
-| `binance_api_key` | Binance API key | `"abc123..."` | Required when using Binance |
-| `binance_secret_key` | Binance Secret key | `"xyz789..."` | Required when using Binance |
-| `hyperliquid_private_key` | Hyperliquid private key<br>⚠️ Remove `0x` prefix | `"your_key..."` | Required when using Hyperliquid |
-| `hyperliquid_wallet_addr` | Hyperliquid wallet address | `"0xabc..."` | Required when using Hyperliquid |
-| `hyperliquid_testnet` | Use testnet | `true` or `false` | ❌ No (defaults to false) |
-| `use_qwen` | Whether to use Qwen | `true` or `false` | ✅ Yes |
-| `deepseek_key` | DeepSeek API key | `"sk-xxx"` | If using DeepSeek |
-| `qwen_key` | Qwen API key | `"sk-xxx"` | If using Qwen |
-| `initial_balance` | Starting balance for P/L calculation | `1000.0` | ✅ Yes |
-| `scan_interval_minutes` | How often to make decisions | `3` (3-5 recommended) | ✅ Yes |
-| **`leverage`** | **Leverage configuration (v2.0.3+)** | See below | ✅ Yes |
-| `btc_eth_leverage` | Maximum leverage for BTC/ETH<br>⚠️ Subaccounts: ≤5x | `5` (default, safe)<br>`50` (main account max) | ✅ Yes |
-| `altcoin_leverage` | Maximum leverage for altcoins<br>⚠️ Subaccounts: ≤5x | `5` (default, safe)<br>`20` (main account max) | ✅ Yes |
-| `use_default_coins` | Use built-in coin list<br>**✨ Smart Default: `true`** (v2.0.2+)<br>Auto-enabled if no API URL provided | `true` or omit | ❌ No<br>(Optional, auto-defaults) |
-| `coin_pool_api_url` | Custom coin pool API<br>*Only needed when `use_default_coins: false`* | `""` (empty) | ❌ No |
-| `oi_top_api_url` | Open interest API<br>*Optional supplement data* | `""` (empty) | ❌ No |
-| `api_server_port` | Web dashboard port | `8080` | ✅ Yes |
+| Field                     | Description                                                                                             | Example Value                                  | Required?                          |
+| ------------------------- | ------------------------------------------------------------------------------------------------------- | ---------------------------------------------- | ---------------------------------- |
+| `id`                      | Unique identifier for this trader                                                                       | `"my_trader"`                                  | ✅ Yes                             |
+| `name`                    | Display name                                                                                            | `"My AI Trader"`                               | ✅ Yes                             |
+| `enabled`                 | Whether this trader is enabled<br>Set to `false` to skip startup                                        | `true` or `false`                              | ✅ Yes                             |
+| `ai_model`                | AI provider to use                                                                                      | `"deepseek"` or `"qwen"` or `"custom"`         | ✅ Yes                             |
+| `exchange`                | Exchange to use                                                                                         | `"binance"` or `"hyperliquid"` or `"aster"`    | ✅ Yes                             |
+| `binance_api_key`         | Binance API key                                                                                         | `"abc123..."`                                  | Required when using Binance        |
+| `binance_secret_key`      | Binance Secret key                                                                                      | `"xyz789..."`                                  | Required when using Binance        |
+| `hyperliquid_private_key` | Hyperliquid private key<br>⚠️ Remove `0x` prefix                                                        | `"your_key..."`                                | Required when using Hyperliquid    |
+| `hyperliquid_wallet_addr` | Hyperliquid wallet address                                                                              | `"0xabc..."`                                   | Required when using Hyperliquid    |
+| `hyperliquid_testnet`     | Use testnet                                                                                             | `true` or `false`                              | ❌ No (defaults to false)          |
+| `use_qwen`                | Whether to use Qwen                                                                                     | `true` or `false`                              | ✅ Yes                             |
+| `deepseek_key`            | DeepSeek API key                                                                                        | `"sk-xxx"`                                     | If using DeepSeek                  |
+| `qwen_key`                | Qwen API key                                                                                            | `"sk-xxx"`                                     | If using Qwen                      |
+| `initial_balance`         | Starting balance for P/L calculation                                                                    | `1000.0`                                       | ✅ Yes                             |
+| `scan_interval_minutes`   | How often to make decisions                                                                             | `3` (3-5 recommended)                          | ✅ Yes                             |
+| **`leverage`**            | **Leverage configuration (v2.0.3+)**                                                                    | See below                                      | ✅ Yes                             |
+| `btc_eth_leverage`        | Maximum leverage for BTC/ETH<br>⚠️ Subaccounts: ≤5x                                                     | `5` (default, safe)<br>`50` (main account max) | ✅ Yes                             |
+| `altcoin_leverage`        | Maximum leverage for altcoins<br>⚠️ Subaccounts: ≤5x                                                    | `5` (default, safe)<br>`20` (main account max) | ✅ Yes                             |
+| `use_default_coins`       | Use built-in coin list<br>**✨ Smart Default: `true`** (v2.0.2+)<br>Auto-enabled if no API URL provided | `true` or omit                                 | ❌ No<br>(Optional, auto-defaults) |
+| `coin_pool_api_url`       | Custom coin pool API<br>_Only needed when `use_default_coins: false`_                                   | `""` (empty)                                   | ❌ No                              |
+| `oi_top_api_url`          | Open interest API<br>_Optional supplement data_                                                         | `""` (empty)                                   | ❌ No                              |
+| `api_server_port`         | Web dashboard port                                                                                      | `8080`                                         | ✅ Yes                             |
 
 **Default Trading Coins** (when `use_default_coins: true`):
+
 - BTC, ETH, SOL, BNB, XRP, DOGE, ADA, HYPE
 
 ---
@@ -693,16 +742,17 @@ The leverage settings control the maximum leverage the AI can use for each trade
 
 **Recommended settings:**
 
-| Account Type | BTC/ETH Leverage | Altcoin Leverage | Risk Level |
-|-------------|------------------|------------------|------------|
-| **Subaccount** | `5` | `5` | ✅ Safe (default) |
-| **Main (Conservative)** | `10` | `10` | 🟡 Medium |
-| **Main (Aggressive)** | `20` | `15` | 🔴 High |
-| **Main (Maximum)** | `50` | `20` | 🔴🔴 Very High |
+| Account Type            | BTC/ETH Leverage | Altcoin Leverage | Risk Level        |
+| ----------------------- | ---------------- | ---------------- | ----------------- |
+| **Subaccount**          | `5`              | `5`              | ✅ Safe (default) |
+| **Main (Conservative)** | `10`             | `10`             | 🟡 Medium         |
+| **Main (Aggressive)**   | `20`             | `15`             | 🔴 High           |
+| **Main (Maximum)**      | `50`             | `20`             | 🔴🔴 Very High    |
 
 **Examples:**
 
 **Safe configuration (subaccount or conservative):**
+
 ```json
 "leverage": {
   "btc_eth_leverage": 5,
@@ -711,6 +761,7 @@ The leverage settings control the maximum leverage the AI can use for each trade
 ```
 
 **Aggressive configuration (main account only):**
+
 ```json
 "leverage": {
   "btc_eth_leverage": 20,
@@ -732,6 +783,7 @@ The leverage settings control the maximum leverage the AI can use for each trade
 **Smart Default Behavior (v2.0.2+):**
 
 The system now automatically defaults to `use_default_coins: true` if:
+
 - You don't include this field in config.json, OR
 - You set it to `false` but don't provide `coin_pool_api_url`
 
@@ -740,6 +792,7 @@ This makes it beginner-friendly! You can even omit this field entirely.
 **Configuration Examples:**
 
 ✅ **Option 1: Explicitly set (Recommended for clarity)**
+
 ```json
 "use_default_coins": true,
 "coin_pool_api_url": "",
@@ -747,6 +800,7 @@ This makes it beginner-friendly! You can even omit this field entirely.
 ```
 
 ✅ **Option 2: Omit the field (uses default coins automatically)**
+
 ```json
 // Just don't include "use_default_coins" at all
 "coin_pool_api_url": "",
@@ -754,6 +808,7 @@ This makes it beginner-friendly! You can even omit this field entirely.
 ```
 
 ⚙️ **Advanced: Use external API**
+
 ```json
 "use_default_coins": false,
 "coin_pool_api_url": "http://your-api.com/coins",
@@ -767,6 +822,7 @@ This makes it beginner-friendly! You can even omit this field entirely.
 #### 🚀 Starting the System (2 steps)
 
 The system has **2 parts** that run separately:
+
 1. **Backend** (AI trading brain + API)
 2. **Frontend** (Web dashboard for monitoring)
 
@@ -795,14 +851,15 @@ go build -o nofx
 
 **⚠️ If you see errors:**
 
-| Error Message | Solution |
-|--------------|----------|
-| `invalid API key` | Check your Binance API key in config.json |
-| `TA-Lib not found` | Run `brew install ta-lib` (macOS) |
-| `port 8080 already in use` | Change `api_server_port` in config.json |
-| `DeepSeek API error` | Verify your DeepSeek API key and balance |
+| Error Message              | Solution                                  |
+| -------------------------- | ----------------------------------------- |
+| `invalid API key`          | Check your Binance API key in config.json |
+| `TA-Lib not found`         | Run `brew install ta-lib` (macOS)         |
+| `port 8080 already in use` | Change `api_server_port` in config.json   |
+| `DeepSeek API error`       | Verify your DeepSeek API key and balance  |
 
 **✅ Backend is running correctly when you see:**
+
 - No error messages
 - "开始交易监控..." appears
 - System shows account balance
@@ -829,6 +886,7 @@ VITE v5.x.x  ready in xxx ms
 ```
 
 **✅ Frontend is running when you see:**
+
 - "Local: http://localhost:3000/" message
 - No error messages
 - Keep this terminal window open too!
@@ -842,12 +900,14 @@ Open your web browser and visit:
 **🌐 http://localhost:3000**
 
 **What you'll see:**
+
 - 📊 Real-time account balance
 - 📈 Open positions (if any)
 - 🤖 AI decision logs
 - 📉 Equity curve chart
 
 **First-time tips:**
+
 - It may take 3-5 minutes for the first AI decision
 - Initial decisions might say "观望" (wait) - this is normal
 - AI needs to analyze market conditions first
@@ -859,12 +919,14 @@ Open your web browser and visit:
 **What to watch:**
 
 ✅ **Healthy System Signs:**
+
 - Backend terminal shows decision cycles every 3-5 minutes
 - No continuous error messages
 - Account balance updates
 - Web dashboard refreshes automatically
 
 ⚠️ **Warning Signs:**
+
 - Repeated API errors
 - No decisions for 10+ minutes
 - Balance decreasing rapidly
@@ -891,6 +953,7 @@ Should return: `{"status":"ok"}`
 5. Press `Ctrl+C`
 
 **⚠️ Important:**
+
 - Always stop the backend first
 - Wait for confirmation before closing terminals
 - Don't force quit (don't close terminal directly)
@@ -1008,21 +1071,25 @@ Each decision cycle (default 3 minutes), the system executes the following intel
 ### Key Improvements in v2.0.2
 
 **📌 Position Duration Tracking:**
+
 - System now tracks how long each position has been held
-- Displayed in user prompt: "持仓时长2小时15分钟"
+- Displayed in user prompt: "持仓时长 2 小时 15 分钟"
 - Helps AI make better decisions on when to exit
 
 **📌 Accurate PnL Calculation:**
+
 - Previously: Only percentage (100U@5% = 1000U@5% = both showed "5.0")
 - Now: Real USDT profit = Position Value × Price Change × Leverage
 - Example: 1000 USDT × 5% × 20x = 1000 USDT actual profit
 
 **📌 Enhanced AI Freedom:**
+
 - AI can freely analyze all raw sequence data
 - No longer restricted to predefined indicator combinations
 - Can perform own trend analysis, support/resistance calculation
 
 **📌 Improved Position Tracking:**
+
 - Uses `symbol_side` key (e.g., "BTCUSDT_long")
 - Prevents conflicts when holding both long & short
 - Stores complete data: quantity, leverage, open/close times
@@ -1037,12 +1104,14 @@ Each decision cycle (default 3 minutes), the system executes the following intel
 ## 📊 Historical Performance Feedback
 
 ### Overall Performance
+
 - **Total Trades**: 15 (Profit: 8 | Loss: 7)
 - **Win Rate**: 53.3%
 - **Average Profit**: +3.2% | Average Loss: -2.1%
 - **Profit/Loss Ratio**: 1.52:1
 
 ### Recent Trades
+
 1. BTCUSDT LONG: 95000.0000 → 97500.0000 = +2.63% ✓
 2. ETHUSDT SHORT: 3500.0000 → 3450.0000 = +1.43% ✓
 3. SOLUSDT LONG: 185.0000 → 180.0000 = -2.70% ✗
@@ -1050,6 +1119,7 @@ Each decision cycle (default 3 minutes), the system executes the following intel
 5. ADAUSDT LONG: 0.8500 → 0.8300 = -2.35% ✗
 
 ### Coin Performance
+
 - **Best**: BTCUSDT (Win rate 75%, avg +2.5%)
 - **Worst**: SOLUSDT (Win rate 25%, avg -1.8%)
 ```
@@ -1136,6 +1206,7 @@ GET /api/config               # System configuration
 ### Usage Recommendations
 
 ✅ **Recommended**
+
 - Use only funds you can afford to lose for testing
 - Start with small amounts (recommended 100-500 USDT)
 - Regularly check system operation status
@@ -1143,6 +1214,7 @@ GET /api/config               # System configuration
 - Analyze AI decision logs to understand strategy
 
 ❌ **Not Recommended**
+
 - Invest all funds or borrowed money
 - Run unsupervised for long periods
 - Blindly trust AI decisions
@@ -1156,6 +1228,7 @@ GET /api/config               # System configuration
 ### 1. Compilation error: TA-Lib not found
 
 **Solution**: Install TA-Lib library
+
 ```bash
 # macOS
 brew install ta-lib
@@ -1171,6 +1244,7 @@ sudo apt-get install libta-lib0-dev
 ### 3. AI API timeout
 
 **Solution**:
+
 - Check if API key is correct
 - Check network connection (may need proxy)
 - System timeout is set to 120 seconds
@@ -1178,6 +1252,7 @@ sudo apt-get install libta-lib0-dev
 ### 4. Frontend can't connect to backend
 
 **Solution**:
+
 - Ensure backend is running (http://localhost:8080)
 - Check if port 8080 is occupied
 - Check browser console for errors
@@ -1185,6 +1260,7 @@ sudo apt-get install libta-lib0-dev
 ### 5. Coin pool API failure
 
 **Solution**:
+
 - Coin pool API is optional
 - If API fails, system uses default mainstream coins (BTC, ETH, etc.)
 - Check API URL and auth parameter in config.json
@@ -1210,6 +1286,7 @@ sudo apt-get install libta-lib0-dev
 This version fixes **critical calculation errors** in the historical trade record and performance analysis system that significantly affected profitability statistics.
 
 **1. PnL Calculation - Major Error Fixed** (logger/decision_logger.go)
+
 - **Problem**: Previously calculated PnL as percentage only, completely ignoring position size and leverage
   - Example: 100 USDT position earning 5% and 1000 USDT position earning 5% both showed `5.0` as profit
   - This made performance analysis completely inaccurate
@@ -1221,6 +1298,7 @@ This version fixes **critical calculation errors** in the historical trade recor
 - **Impact**: Win rate, profit factor, and Sharpe ratio now based on accurate USDT amounts
 
 **2. Position Tracking - Missing Critical Data**
+
 - **Problem**: Open position records only stored price and time, missing quantity and leverage
 - **Solution**: Now stores complete trade data:
   - `quantity`: Position size (in coins)
@@ -1228,17 +1306,20 @@ This version fixes **critical calculation errors** in the historical trade recor
   - These are essential for accurate PnL calculations
 
 **3. Position Key Logic - Long/Short Conflict**
+
 - **Problem**: Used `symbol` as position key, causing data conflicts when holding both long and short
   - Example: BTCUSDT long and BTCUSDT short would overwrite each other
 - **Solution**: Changed to `symbol_side` format (e.g., `BTCUSDT_long`, `BTCUSDT_short`)
   - Now properly distinguishes between long and short positions
 
 **4. Sharpe Ratio Calculation - Code Optimization**
+
 - **Problem**: Used custom Newton's method for square root calculation
 - **Solution**: Replaced with standard library `math.Sqrt`
   - More reliable, maintainable, and efficient
 
 **Why This Update Matters:**
+
 - ✅ Historical trade statistics now show **real USDT profit/loss** instead of meaningless percentages
 - ✅ Performance comparison between different leverage trades is now accurate
 - ✅ AI self-learning mechanism receives correct historical feedback
@@ -1250,12 +1331,14 @@ This version fixes **critical calculation errors** in the historical trade recor
 ### v2.0.2 (2025-10-29)
 
 **Bug Fixes:**
+
 - ✅ Fixed Aster exchange precision error (code -1111: "Precision is over the maximum defined for this asset")
 - ✅ Improved price and quantity formatting to match exchange precision requirements
 - ✅ Added detailed precision processing logs for debugging
 - ✅ Enhanced all order functions (OpenLong, OpenShort, CloseLong, CloseShort, SetStopLoss, SetTakeProfit) with proper precision handling
 
 **Technical Details:**
+
 - Added `formatFloatWithPrecision` function to convert float64 to strings with correct precision
 - Price and quantity parameters are now formatted according to exchange's `pricePrecision` and `quantityPrecision` specifications
 - Trailing zeros are removed from formatted values to optimize API requests
@@ -1263,6 +1346,7 @@ This version fixes **critical calculation errors** in the historical trade recor
 ### v2.0.1 (2025-10-29)
 
 **Bug Fixes:**
+
 - ✅ Fixed ComparisonChart data processing logic - switched from cycle_number to timestamp grouping
 - ✅ Resolved chart freezing issue when backend restarts and cycle_number resets
 - ✅ Improved chart data display - now shows all historical data points chronologically
@@ -1271,6 +1355,7 @@ This version fixes **critical calculation errors** in the historical trade recor
 ### v2.0.0 (2025-10-28)
 
 **Major Updates:**
+
 - ✅ AI self-learning mechanism (historical feedback, performance analysis)
 - ✅ Multi-trader competition mode (Qwen vs DeepSeek)
 - ✅ Binance-style UI (complete Binance interface imitation)
@@ -1278,11 +1363,13 @@ This version fixes **critical calculation errors** in the historical trade recor
 - ✅ Risk control optimization (per-coin position limit adjustment)
 
 **Bug Fixes:**
+
 - Fixed hardcoded initial balance issue
 - Fixed multi-trader data sync issue
 - Optimized chart data alignment (using cycle_number)
 
 ### v1.0.0 (2025-10-27)
+
 - Initial release
 - Basic AI trading functionality
 - Decision logging system
@@ -1312,8 +1399,8 @@ Issues and Pull Requests are welcome!
 
 ## 📬 Contact
 
-
 ### 🐛 Technical Support
+
 - **GitHub Issues**: [Submit an Issue](https://github.com/tinkle-community/nofx/issues)
 - **Developer Community**: [Telegram Group](https://t.me/nofx_dev_community)
 
